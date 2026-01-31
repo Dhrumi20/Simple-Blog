@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Blog</title>
+
+ <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="top">
+      <h1>📰 Simple Blog</h1>
+    </header>
+
+    <div class="bar">
+      <input type="text" id="searchBox" placeholder="Search posts..." />
+      <button class="btn btn-danger" id="clearAllBtn">Clear All</button>
+    </div>
+
+    <div class="create-box">
+      <input type="text" id="postTitle" placeholder="Post title..." />
+      <textarea id="postContent" placeholder="Write your post content here..."></textarea>
+      <button class="btn btn-add" id="addPostBtn">+ Publish Post</button>
+    </div>
+
+    <div id="postsWrap" class="posts-wrap"></div>
+
+  </div>
+
+  <script src="Js/main.js"></script>
+</body>
+</html>

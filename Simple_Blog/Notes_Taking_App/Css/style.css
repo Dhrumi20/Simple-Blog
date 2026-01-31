@@ -1,0 +1,222 @@
+ *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: #0b0b0b;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 22px 12px;
+    }
+
+    .app{
+      width: 100%;
+      max-width: 950px;
+    }
+
+    .top{
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .top h1{
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    .top p{
+      margin-top: 8px;
+      font-size: 14px;
+      color: #bcbcbc;
+    }
+
+    .bar{
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .bar input{
+      flex: 1;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #2b2b2b;
+      outline: none;
+      background: #111;
+      color: white;
+    }
+
+    .bar input::placeholder{
+      color: #7a7a7a;
+    }
+
+    .btn{
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #2b2b2b;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+      user-select: none;
+    }
+
+    .btn:hover{
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .btn-danger{
+      background: #fff;
+      color: #000;
+    }
+
+    .btn-add{
+      background: #ffffff;
+      color: #000000;
+      width: 100%;
+      border: none;
+      margin-top: 10px;
+    }
+
+    .create-box{
+      background: #0f0f0f;
+      border: 1px solid #2b2b2b;
+      padding: 14px;
+      border-radius: 16px;
+      margin-bottom: 18px;
+    }
+
+    .create-box input{
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #2b2b2b;
+      outline: none;
+      background: #111;
+      color: white;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .create-box input::placeholder{
+      color: #7a7a7a;
+    }
+
+    .create-box textarea{
+      width: 100%;
+      min-height: 120px;
+      resize: none;
+      border: 1px solid transparent;
+      outline: none;
+      background: transparent;
+      color: white;
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 6px;
+    }
+
+    .create-box textarea::placeholder{
+      color: #7a7a7a;
+    }
+
+    .posts-wrap{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .post{
+      background: #0f0f0f;
+      border: 1px solid #2b2b2b;
+      border-radius: 16px;
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .post .time{
+      font-size: 12px;
+      color: #a8a8a8;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .post h3{
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #fff;
+      word-break: break-word;
+    }
+
+    .post .text{
+      font-size: 15px;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: #f1f1f1;
+    }
+
+    .actions{
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .actions button{
+      flex: 1;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1px solid #2b2b2b;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .actions button:hover{
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .editBtn{
+      background: #1a1a1a;
+      color: #fff;
+    }
+
+    .deleteBtn{
+      background: #fff;
+      color: #000;
+    }
+
+    .empty{
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 30px 10px;
+      border-radius: 16px;
+      border: 1px dashed #2b2b2b;
+      color: #9a9a9a;
+    }
+
+    @media(max-width: 850px){
+      .posts-wrap{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 520px){
+      .bar{
+        flex-direction: column;
+      }
+      .posts-wrap{
+        grid-template-columns: 1fr;
+      }
+      .top h1{
+        font-size: 28px;
+      }
+    }
